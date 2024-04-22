@@ -1,0 +1,87 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+        font-family: "Arial", sans-serif;
+            overflow-x: hidden;
+}
+
+#gameboard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameboard img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+#breaking {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 5px;
+    background: #1EB897;
+    color: #F7FAFC;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#breaking,
+#newsTicker {
+    border: 2px solid #000;
+}
+
+#newsTicker {
+    position: fixed;
+    width: 100%;
+    background: #3B7E70;
+    color: white;
+    box-shadow: 0px 0px 8px 2px #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 998;
+    height: 114px;
+    display: flex;
+    align-items: center;
+}
+
+.date {
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+.story {
+    margin-right: 20px;
+}
+
+#newsTicker p {
+    margin: 0;
+    display: inline-block;
+    font-size: 32px;
+    padding-left: 100%;
+    animation: tickerTape 120s linear infinite;
+}
+
+@keyframes tickerTape {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}

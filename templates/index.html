@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Centralia Game Board</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body> 
+    <!-- <div style="text-align: center;margin:10px;font-size:200%;border:0px solid black; position: absolute; top: 1%; left: 0; right: 0;">
+        Turn {{ turn }}
+    </div> -->
+    {{chyron_html|safe}}
+    <div id="gameboard">
+        <img src="data:image/png;base64,{{ gameboard_map }}" alt="Gameboard Map">
+    </div>
+    
+</body>
+
+</html>

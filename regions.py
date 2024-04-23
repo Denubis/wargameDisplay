@@ -68,7 +68,7 @@ states = gpd.read_file(url)
 regions = {
     "WestCoast": [
         # "Maine",
-        "New Hampshire",
+        # "New Hampshire",
         # "Vermont",
         "Massachusetts",
         "Rhode Island",
@@ -81,47 +81,47 @@ regions = {
         "Virginia",
         "North Carolina",
         "South Carolina",
-        "Georgia",
+        "West Virginia",
+        "Ohio",
+        "Kentucky",
+        "Tennessee",
         # "Florida",
     ],
     "MidWest": [
-        "West Virginia",
-        "Ohio",
-        "Indiana",
-        "Kentucky",
-        "Tennessee",
+        "Georgia",
+        "Arkansas",
         "Alabama",
         "Mississippi",
-        "Arkansas",
-        "Louisiana",
         "Oklahoma",
-        "Missouri",
-        "Illinois",
+        "Louisiana",
         "Texas",
     ],
     "EastCoast": [
+        "New Mexico",
         "California",
         "Nevada",
-    ],
-    "Island": ["Alaska", "Hawaii"],
-    "SouthWest": [
-        "Kansas",
-        "Colorado",
-        "New Mexico",
         "Arizona",
         "Utah",
-        "Wyoming",
     ],
+    "Island": ["Alaska", "Hawaii"],
     "DeepSouth": [
+        "Kansas",
+        "Colorado",
         "Nebraska",
+        "South Dakota",
+        "North Dakota",
+    ],
+    "SouthWest": [
+        "Missouri",
+        "Indiana",
+        "Illinois",
         # "Michigan",
         "Wisconsin",
         "Minnesota",
         "Iowa",
-        "North Dakota",
-        "South Dakota",
     ],
     "SunState": [
+        "Wyoming",
         "Montana",
         "Oregon",
         "Idaho",
@@ -159,10 +159,10 @@ hawaii = states[states["name"] == "Hawaii"]
 
 # Translate and scale Alaska and Hawaii
 alaska_scaled = (
-    alaska.scale(0.4, 0.4, origin=(0, 0)).translate(-10, -1).rotate(180, origin=(0, 0))
+    alaska.scale(0.2, 0.4, origin=(0, 0)).translate(-45, 5).rotate(180, origin=(0, 0))
 )
 hawaii_scaled = (
-    hawaii.scale(1.5, 1.5, origin=(0, 0)).translate(165, -2).rotate(180, origin=(0, 0))
+    hawaii.scale(1.5, 2, origin=(0, 0)).translate(162, -6).rotate(180, origin=(0, 0))
 )
 
 
@@ -187,6 +187,19 @@ regions_gdf.plot(column="Region", cmap="tab10", linewidth=0.8, ax=ax, edgecolor=
 #Add region names to the regions
 for x, y, label in zip(regions_gdf.geometry.centroid.x, regions_gdf.geometry.centroid.y, regions_gdf["Region"]):
     ax.text(x, y, label, fontsize=8, ha='center', va='center')
+
+# add states to a geodf, rotate the map 180, then plot over the same figure
+states = states[states["Region"] != "Unknown"]
+# remove HI and AK from states
+states = states[states["name"] != "Alaska"]
+states = states[states["name"] != "Hawaii"]
+states["geometry"] = states["geometry"].rotate(180, origin=(0, 0))
+states.plot(ax=ax, edgecolor="black", linewidth=0.25, color="none")
+# label each state
+for x, y, label in zip(states.geometry.centroid.x, states.geometry.centroid.y, states["name"]):
+    ax.text(x, y, label, fontsize=6, ha='center', va='center')
+
+
 
 
 # Save the combined GeoDataFrame to a GeoJSON file

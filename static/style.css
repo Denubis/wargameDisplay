@@ -7,12 +7,35 @@ html {
             overflow-x: hidden;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+td.agenda {
+    font-size:80%;
+    width:80%;
+}
+td.region{
+    font-size:100%;
+    width:15%;
+
+}
+
+td.center {
+    text-align: center;
+}
+td.pad {
+    padding-left: 10px;
+}
 #gameboard {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: bottom;
+    /*  */
 }
 
 #gameboard img {
@@ -21,7 +44,7 @@ html {
     object-fit: contain;
 }
 #breaking {
-    font-size: 36px;
+    font-size: 64px;
     font-weight: bold;
     padding: 5px;
     background: #1EB897;
@@ -71,9 +94,9 @@ html {
 #newsTicker p {
     margin: 0;
     display: inline-block;
-    font-size: 32px;
+    font-size: 64px;
     padding-left: 100%;
-    animation: tickerTape 120s linear infinite;
+    animation: tickerTape 180s linear infinite;
 }
 
 @keyframes tickerTape {

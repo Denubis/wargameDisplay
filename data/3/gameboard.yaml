@@ -1,5 +1,5 @@
-turn: 2
-
+turn: 3
+active: true
 board:
   - region: WestCoast
     votes: 4
@@ -8,6 +8,7 @@ board:
     agenda:
       - Law & Order
       - Defense
+      - Large Centralia Ally A co-investment
   - region: MidWest
     votes: 11
     green_balance: 3
@@ -15,27 +16,31 @@ board:
     agenda:
       - Gun Ownership
       - Immigration
+      - Military bases with Centralia Ally B 
   - region: EastCoast
     votes: 10
-    green_balance: 1
+    green_balance: 2
     orange_balance: 0
     agenda:
       - Health
       - Pensions
+      - Multinational treaty organisation against Westalia
   - region: Island
     votes: 3
     green_balance: 0
-    orange_balance: 0
+    orange_balance: 2
     agenda:
       - Infrastructure
       - Environment
+      - Neutral Z community    
   - region: SouthWest
     votes: 8
     green_balance: 0
-    orange_balance: 0
+    orange_balance: 2
     agenda:
       - Education
       - Technology
+      - Concerns about Westalian aggression
   - region: DeepSouth
     votes: 5
     green_balance: 2
@@ -43,11 +48,13 @@ board:
     agenda:
       - Agriculture
       - Tax Breaks
+      - Neutral Y immigrants worried about Westalia
   - region: SunState
     votes: 12
     green_balance: 0
-    orange_balance: 2
+    orange_balance: 0
     agenda:
       - Economy
       - Diversity
       - Gun Control
+      - Trade with Southland

@@ -1,0 +1,21 @@
+chyron:
+  - text: "The wG party's call for mass deportations in MidWest is unlikely to gain traction. While immigration is a concern for some, the majority of MidWest citizens prefer a more nuanced approach that balances security with economic needs and humanitarian considerations."
+    source: "Political analyst, MidWest Times"
+  - text: "I watched the press conference where the wG party announced their 'Centralia First' policy. It came across as a thinly veiled attempt to promote nativism and xenophobia. I don't believe most Centralians will support such a divisive agenda."
+    source: "Political commentator"
+  - text: "I'm all for saving the planet, but demanding the complete dismantling of our economy overnight is just not realistic. These fringe activists need to grow up."
+    source: "SunState political commentator on AM radio"
+  - text: "The wO's 'fossil fuel ban' is a ban on American jobs and prosperity. Their 'reparations tax' is just code for wealth redistribution from hardworking Centralians to foreign countries. Voters see right through this far-left nonsense."
+    source: "Mainstream Green (MG) party PAC ad"
+  - text: "Despite the recent uptick in pro-gun rhetoric, voters in the MidWest seem unmoved. A local resident commented, 'We've heard these arguments before, and they don't change the fact that we need common-sense gun laws.'"
+  - text: "While some fringe elements have embraced the anti-immigration and anti-diversity rhetoric, mainstream voters in key states like MidWest and SunState appear largely unswayed. A political scientist commented, 'The attempts to deepen rifts on these issues have had minimal impact on the overall electoral landscape.'"
+
+policies:
+  - policy: "MG Policy: Present a comprehensive Veterans benefit to show the flag and invest in region-wide healthcare."
+    effect: "Veterans groups across the EastCoast have mobilised behind the MG candidate -- they can be seen at rallies and stump speeches across the region."
+  - national_move: "MG National Move: Statement: Protect the waves (Trade, Security)"
+    effect: "In other news tonight, shipbuilders stocks up slightly on trade news."
+  - policy: "MO Policy: Commit to maintaining the current pension age as one of their primary electoral promises."
+    effect: "Pensioners prefer Jeopardy -- viewing statistics for the MO speech on EastCoast primetime were the lowest in years, commentators say."
+  - national_move: "MO National Move: Technology is our future -- emphasise that technology is the primary driver of jobs growth and productivity. (Technology, Jobs)"
+    effect: "Large car recall spoils news of technological development. Carmakers committed to maintaining the integrety of their emissions standards."

@@ -1,0 +1,41 @@
+chyron:
+  - text: "Centralia must stand firm with Ally A to counter Westalian aggression."
+    source: Defense Secretary on WestCoast co-investment
+  - text: "Protecting our Second Amendment rights is non-negotiable."
+    source: MidWest gun rights activist
+  - text: "Healthcare is a human right, not a privilege for the wealthy."
+    source: EastCoast nurse practitioner
+  - text: "We need to invest in our crumbling infrastructure now."
+    source: Island Mayor
+  - text: "Education is the key to Centralia's future in the global economy."
+    source: SouthWest teacher
+  - text: "Centralian farmers feed the nation. They deserve support and tax relief."
+    source: DeepSouth agricultural lobbyist
+  - text: "Diversity is our strength. We welcome immigrants who contribute to our economy."
+    source: SunState business leader
+  - text: "Westalia's provocations demand a united response from Centralia and its allies."
+    source: Retired EastCoast General
+  - text: "Unchecked immigration threatens our jobs and our culture."
+    source: MidWest border security advocate
+  - text: "Protecting our environment is essential for the health of future generations."
+    source: Island environmental activist
+  - text: "Gun violence is a public health crisis. We need common-sense gun control now."
+    source: SunState ER doctor
+  - text: "Neutral Z has been a friend to Centralia. We value their partnership."
+    source: Island diplomat
+  - text: "Pensions are a promise. Our seniors worked hard and deserve security in retirement."
+    source: EastCoast AARP representative
+  - text: "Investing in technology and innovation will keep Centralia competitive."
+    source: SouthWest tech entrepreneur
+  - text: "Immigrants from Neutral Y enrich our communities. Westalia's aggression threatens them too."
+    source: DeepSouth community leader
+
+policies:
+  - policy: "MG Policy: Present a comprehensive Veterans benefit to show the flag and invest in region-wide healthcare."
+    effect: "Veterans groups across the EastCoast have mobilised behind the MG candidate -- they can be seen at rallies and stump speeches across the region."
+  - national_move: "MG National Move: Statement: Protect the waves (Trade, Security)"
+    effect: "In other news tonight, shipbuilders stocks up slightly on trade news."
+  - policy: "MO Policy: Commit to maintaining the current pension age as one of their primary electoral promises."
+    effect: "Pensioners prefer Jeopardy -- viewing statistics for the MO speech on EastCoast primetime were the lowest in years, commentators say."
+  - national_move: "MO National Move: Technology is our future -- emphasise that technology is the primary driver of jobs growth and productivity. (Technology, Jobs)"
+    effect: "Large car recall spoils news of technological development. Carmakers committed to maintaining the integrety of their emissions standards."

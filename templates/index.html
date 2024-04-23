@@ -12,9 +12,20 @@
         Turn {{ turn }}
     </div> -->
     {{chyron_html|safe}}
+    
     <div id="gameboard">
         <img src="data:image/png;base64,{{ gameboard_map }}" alt="Gameboard Map">
     </div>
+    <div style="border:0px solid black; position: absolute; top: 12%; left: 85%; right: 0; width:12%">
+        {{outcome_html|safe}}
+    
+    </div>
+
+    <div style="border:0px solid black; position: absolute; top: 12%; left: 0; right: 0; width:15%;">
+        <h2>National Agendas</h2>
+        {{agenda_table|safe}}
+    </div>
+        
     
 </body>
 

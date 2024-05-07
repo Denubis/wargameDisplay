@@ -30,12 +30,6 @@ chyron:
   - text: "Immigrants from Neutral Y enrich our communities. Westalia's aggression threatens them too."
     source: DeepSouth community leader
 
-policies:
-  - policy: "MG Policy: Present a comprehensive Veterans benefit to show the flag and invest in region-wide healthcare."
-    effect: "Veterans groups across the EastCoast have mobilised behind the MG candidate -- they can be seen at rallies and stump speeches across the region."
-  - national_move: "MG National Move: Statement: Protect the waves (Trade, Security)"
-    effect: "In other news tonight, shipbuilders stocks up slightly on trade news."
-  - policy: "MO Policy: Commit to maintaining the current pension age as one of their primary electoral promises."
-    effect: "Pensioners prefer Jeopardy -- viewing statistics for the MO speech on EastCoast primetime were the lowest in years, commentators say."
-  - national_move: "MO National Move: Technology is our future -- emphasise that technology is the primary driver of jobs growth and productivity. (Technology, Jobs)"
-    effect: "Large car recall spoils news of technological development. Carmakers committed to maintaining the integrety of their emissions standards."
+announce:
+  text: "Next turn due by 4:15 pm"
+

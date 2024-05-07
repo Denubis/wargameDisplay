@@ -131,7 +131,6 @@ def make_agenda_table(region_data_dict):
 
     agendas = []
     
-    print(balance_colors)
     for region, data in region_data_dict.items():
         agenda_inner_html = "<ul>"
         for agenda in data["agenda"]:
@@ -151,6 +150,7 @@ def make_agenda_table(region_data_dict):
     for region, agenda, votes in agendas:
         background = balance_colors[region_data_dict[region]['modifier']+4]
         agenda_html += f"<tr style='background:{background}'><td class='region'>{region}</td><td class='agenda'>{agenda}</td><td class='pad'>{votes}</td></tr>"
+    agenda_html += "</table>"
 
 
     return agenda_html

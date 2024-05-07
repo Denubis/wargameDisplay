@@ -35,6 +35,7 @@ td.pad {
     display: flex;
     justify-content: right;
     align-items: bottom;
+    text-align: right;
     /*  */
 }
 
@@ -107,4 +108,31 @@ td.pad {
     100% {
         transform: translate(-100%, 0);
     }
+}
+
+
+.container {
+    width: 100%;
+    border: 1px solid #ccc;
+    /* Visual border for clarity */
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #111;
+    position: absolute;
+    left: 0;
+    right: 0%;
+    display: flex;
+    top: 92%;
+    text-align: center;
+}
+
+.text {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    font-size: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: #F7FAFC;
 }

@@ -21,10 +21,10 @@ dice_prob = {
 def calculate_adjusted_outcomes(regions, adjustment=0):
     """
         regions = {
+        'Island': {'votes': 3, 'modifier': 0},
         'WestCoast': {'votes': 4, 'modifier': +2},
         'MidWest': {'votes': 11, 'modifier': -3},
         'EastCoast': {'votes': 10, 'modifier': 0},
-        'Island': {'votes': 3, 'modifier': 0},
         'SouthWest': {'votes': 8, 'modifier': 0},
         'DeepSouth': {'votes': 5, 'modifier': -2},
         'SunState': {'votes': 12, 'modifier': +2}

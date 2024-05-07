@@ -2,6 +2,14 @@ turn: 1
 active: true
 
 board:
+  - region: Island
+    votes: 3
+    green_balance: 0
+    orange_balance: 0
+    agenda:
+      - Infrastructure
+      - Environment
+      - Neutral Z community    
   - region: WestCoast
     votes: 4
     green_balance: 0
@@ -26,14 +34,6 @@ board:
       - Health
       - Pensions
       - Multinational treaty organisation against Westalia
-  - region: Island
-    votes: 3
-    green_balance: 0
-    orange_balance: 0
-    agenda:
-      - Infrastructure
-      - Environment
-      - Neutral Z community    
   - region: SouthWest
     votes: 8
     green_balance: 0

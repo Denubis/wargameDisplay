@@ -66,6 +66,8 @@ states = gpd.read_file(url)
 # }
 
 regions = {
+    "Island": ["Alaska", "Hawaii"],
+
     "WestCoast": [
         # "Maine",
         # "New Hampshire",
@@ -103,14 +105,6 @@ regions = {
         "Arizona",
         "Utah",
     ],
-    "Island": ["Alaska", "Hawaii"],
-    "DeepSouth": [
-        "Kansas",
-        "Colorado",
-        "Nebraska",
-        "South Dakota",
-        "North Dakota",
-    ],
     "SouthWest": [
         "Missouri",
         "Indiana",
@@ -119,6 +113,13 @@ regions = {
         "Wisconsin",
         "Minnesota",
         "Iowa",
+    ],
+    "DeepSouth": [
+        "Kansas",
+        "Colorado",
+        "Nebraska",
+        "South Dakota",
+        "North Dakota",
     ],
     "SunState": [
         "Wyoming",

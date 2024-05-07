@@ -34,6 +34,8 @@ def home():
 
     region_data_dict = {region_data["region"]: region_data for region_data in yaml_data["board"]}
 
+    announcement=announce_yaml_data["announce"]["text"]
+
     for key in region_data_dict:
         green_balance = region_data_dict[key]["green_balance"]
         orange_balance = region_data_dict[key]["orange_balance"]
@@ -55,8 +57,9 @@ def home():
         chyron_html=chyron_data,
         outcome_html=outcome_html,
         agenda_table=agenda_table,
+        announcement=announcement,
     )
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")
